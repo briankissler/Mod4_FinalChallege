@@ -24,6 +24,7 @@
 		BEC39FDD26A9B09900F78653 /* Mod4_Lesson15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mod4_Lesson15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC39FDF26A9B09900F78653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC39FE026A9B09900F78653 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BEC39FF026A9B14E00F78653 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		BEC39FCD26A9B09700F78653 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BEC39FEF26A9B13300F78653 /* Data */,
 				BEC39FCE26A9B09700F78653 /* Mod4_Lesson15App.swift */,
 				BEC39FCF26A9B09700F78653 /* ContentView.swift */,
 				BEC39FD026A9B09900F78653 /* Assets.xcassets */,
@@ -88,6 +90,14 @@
 				BEC39FE026A9B09900F78653 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		BEC39FEF26A9B13300F78653 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEC39FF026A9B14E00F78653 /* Data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
