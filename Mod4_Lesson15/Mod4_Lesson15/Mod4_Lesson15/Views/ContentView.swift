@@ -15,11 +15,31 @@ struct ContentView: View {
     
     var body: some View {
         
-        List(BookModel.books) {p in
+        
+        NavigationView {
             
-            Text(p.title)
+            ScrollView{
+                
+                
+                LazyVStack(alignment: .leading, spacing: 30) {
+                    ForEach( BookModel.books ){ b in
+                        
+                        CardView(book: b)
+                        
+                        
+                    }
+                }
+                
+            }
             
-        }.environmentObject(ViewModel())
+//            List(BookModel.books) {p in
+//                CardView()
+//
+//            }
+            
+            .navigationTitle("Library")
+        }
+        //.environmentObject(ViewModel())
         
         
         //Text("Hello, world!")
