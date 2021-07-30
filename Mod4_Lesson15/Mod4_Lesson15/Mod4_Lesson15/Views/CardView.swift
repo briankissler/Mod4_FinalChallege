@@ -23,10 +23,17 @@ struct CardView: View {
                 
                 Spacer()
                 
-                Image(systemName: "star.fill")
-                    .frame(width: 28, height: 28, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.yellow)
+                
+                if book.isFavourite
+                {
+                    Image(systemName: "star.fill")
+                        .frame(width: 28, height: 28, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.yellow)
+                        .hidden()
+                        
                     
+                }
+                
                 
             }
             

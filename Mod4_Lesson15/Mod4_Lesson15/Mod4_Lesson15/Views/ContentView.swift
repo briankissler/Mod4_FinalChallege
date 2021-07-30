@@ -18,26 +18,31 @@ struct ContentView: View {
         
         NavigationView {
             
-            ScrollView{
+            
+            VStack {
                 
-                
-                LazyVStack(alignment: .leading, spacing: 30) {
-                    ForEach( BookModel.books ){ b in
-                        
-                        CardView(book: b)
-                        
-                        
+                ScrollView{
+                    
+                    
+                    LazyVStack(alignment: .leading, spacing: 30) {
+                        ForEach( BookModel.books ){ b in
+                            NavigationLink(destination: BookDetail( book: b ) )
+                            {
+                                CardView(book: b)
+                            }
+                            
+                        }
                     }
+                    
                 }
                 
+    //            List(BookModel.books) {p in
+    //                CardView()
+    //
+    //            }
+                
+                .navigationTitle("My Library")
             }
-            
-//            List(BookModel.books) {p in
-//                CardView()
-//
-//            }
-            
-            .navigationTitle("Library")
         }
         //.environmentObject(ViewModel())
         

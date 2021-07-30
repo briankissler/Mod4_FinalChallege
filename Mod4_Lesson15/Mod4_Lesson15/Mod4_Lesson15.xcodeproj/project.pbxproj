@@ -16,6 +16,8 @@
 		BE922A9926AA119E0025FA5F /* getJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE922A9826AA119E0025FA5F /* getJSON.swift */; };
 		BE922A9B26AB65260025FA5F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE922A9A26AB65260025FA5F /* ViewModel.swift */; };
 		BE922A9D26AC8B950025FA5F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE922A9C26AC8B950025FA5F /* CardView.swift */; };
+		BEB0DB6926B0AE43004C3C7E /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0DB6826B0AE43004C3C7E /* BookDetail.swift */; };
+		BEB0DB6B26B0B9B1004C3C7E /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0DB6A26B0B9B1004C3C7E /* BookContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BE922A9826AA119E0025FA5F /* getJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJSON.swift; sourceTree = "<group>"; };
 		BE922A9A26AB65260025FA5F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BE922A9C26AC8B950025FA5F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BEB0DB6826B0AE43004C3C7E /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
+		BEB0DB6A26B0B9B1004C3C7E /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				BE922A8226A9BAE10025FA5F /* ContentView.swift */,
+				BEB0DB6826B0AE43004C3C7E /* BookDetail.swift */,
+				BEB0DB6A26B0B9B1004C3C7E /* BookContent.swift */,
 				BE922A9C26AC8B950025FA5F /* CardView.swift */,
 			);
 			path = Views;
@@ -196,9 +202,11 @@
 			files = (
 				BE922A9B26AB65260025FA5F /* ViewModel.swift in Sources */,
 				BE922A9726AA0C510025FA5F /* Books.swift in Sources */,
+				BEB0DB6B26B0B9B1004C3C7E /* BookContent.swift in Sources */,
 				BE922A8326A9BAE10025FA5F /* ContentView.swift in Sources */,
 				BE922A9926AA119E0025FA5F /* getJSON.swift in Sources */,
 				BE922A9D26AC8B950025FA5F /* CardView.swift in Sources */,
+				BEB0DB6926B0AE43004C3C7E /* BookDetail.swift in Sources */,
 				BE922A8126A9BAE10025FA5F /* Mod4_Lesson15App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Book: Identifiable, Decodable {
+struct Book: Decodable, Identifiable {
      
     //var id:UUID?
     var title="Test ME"

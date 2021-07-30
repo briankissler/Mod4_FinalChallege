@@ -42,6 +42,28 @@ class ViewModel: ObservableObject {
     
     }
     
+    func updateFavorites(bIdex:  Int  )
+    {
+        
+        if let index = books.firstIndex(where: { $0.id == bIdex }) {
+            books[index].isFavourite.toggle()
+            
+        }
+            
+    }
+    
+    func updateRating(bIdex:  Int,rte: Int  )
+    {
+        
+        if let index = books.firstIndex(where: { $0.id == bIdex }) {
+            books[index].rating = rte
+            
+        }
+            
+    }
+        
+        
+    
     
     
 }
