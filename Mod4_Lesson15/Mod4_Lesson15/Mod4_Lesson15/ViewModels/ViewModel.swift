@@ -61,6 +61,17 @@ class ViewModel: ObservableObject {
         }
             
     }
+    
+    
+    func updatePage(bIdex:  Int, page: Int  )
+    {
+        
+        if let index = books.firstIndex(where: { $0.id == bIdex }) {
+            books[index].currentPage = page
+            
+        }
+            
+    }
         
         
     

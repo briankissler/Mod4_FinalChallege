@@ -13,10 +13,14 @@ struct BookContent: View {
     
     var book: Book
     
+    @State private var myPage=1
+    
+    @State private var page = 0
+    
     
     var body: some View {
         
-        TabView{
+        TabView(selection: $myPage){
             
             //VStack{
                 
@@ -24,10 +28,13 @@ struct BookContent: View {
                     
                     VStack{
                         
-                        Text(book.content[index])
+                        Text(book.content[index]).tag(index)
                         
                         
                         Text("PageNumber \(index+1)")
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        
+                        Text("myPage \(myPage)")
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             
                     }
@@ -45,6 +52,10 @@ struct BookContent: View {
         }
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
+        .onChange(of: myPage, perform: { value in
+            BookModel.updatePage(bIdex: book.id, page: myPage)
+        })
+        .onAppear{ myPage = book.currentPage }
         //.indexViewStyle(.page(backgroundDisplayMode: .always))
         
         
@@ -55,6 +66,6 @@ struct BookContent: View {
 
 struct BookContent_Previews: PreviewProvider {
     static var previews: some View {
-        BookContent(book: Book() )
+        BookContent(book: Book() ).environmentObject(ViewModel())
     }
 }

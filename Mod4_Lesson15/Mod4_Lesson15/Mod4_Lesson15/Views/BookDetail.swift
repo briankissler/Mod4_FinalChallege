@@ -80,14 +80,13 @@ struct BookDetail: View {
                 BookModel.updateRating(bIdex: book.id, rte: rating)
             })
                      
-            Spacer()
             
             Text("Var Rating=" + String(rating))
             
-            Spacer()
-            
             Text("Book Rating=" + String(book.rating ))
             
+            Text("Book Page=" + String(book.currentPage ))
+           
             
         }
         .onAppear{ rating = book.rating }
